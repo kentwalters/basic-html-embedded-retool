@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script src="https://cdn.tryretool.com/embed.js"> </script>
+    <script>
+function incrementCompanyId () {
+  var d = document.getElementById('companyid');
+  var curValue = parseInt(d.textContent)
+  d.textContent = String(curValue + 1)
+}
+    </script>
+  </head>
+  <body>
+    <h1> Company id</h1><p id="companyid">13</p> <button onclick="incrementCompanyId()"> increment me </button>
+    <h1> User id</h1><p>1433</p>
+    <div style="height: 800px; width: 100%;" id='container'></div>
+
+    <script>
+var rt = window.retool.RetoolDashboard(document.getElementById('container'), 'https://example.retool.com/')
+    </script>
+  </body>
+</html>
